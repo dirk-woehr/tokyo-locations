@@ -4,8 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tokyo Locations 2024</title>
+    <script src="script/data.js"></script>
     <script src="script/script.js"></script>
     <link rel="stylesheet" href="/style/style.css" />
+    <link rel="stylesheet" href="/style/grid.css" />
     <link rel="icon" href="images/favicon.ico" sizes="32x32" />
     <link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
     <link rel="manifest" href="/manifest.webmanifest" />
@@ -17,7 +19,32 @@
     />
   </head>
   <body>
-    <h1>Tokyo Locations 2024</h1>
-    <div class="itemContainer"></div>
+    <div id="main">
+      <div id="mainHeader">
+        <h1>Tokyo 2024</h1>
+        <div id="navToggleContainer">
+          <input type="checkbox" name="navTogggle" id="navTogggle" />
+          <label class="tpIcon" id="showNavToggle" for="navTogggle"
+            >Filter<span class="arrow">&#8250;</span></label
+          >
+          <label class="tpIcon" id="hideNavToggle" for="navTogggle"
+            >Filter<span class="arrow">&#8249;</span></label
+          >
+        </div>
+        <navigation></navigation>
+      </div>
+      <div id="itemContainer"></div>
+    </div>
   </body>
+  <template id="cardTemplate">
+    <div class="card">
+      <p class="tpIcon"></p>
+      <p class="evnDat"></p>
+      <h1 class="jpName"></h1>
+      <h2 class="deName"></h2>
+      <p class="deScrp"></p>
+      <div class="gglMps"></div>
+      <div class="wbSite"></div>
+    </div>
+  </template>
 </html>

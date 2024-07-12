@@ -1,0 +1,109 @@
+#itemContainer {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap);
+  margin-top: 3rem;
+}
+
+.card {
+  display: grid;
+  gap: var(--card-gap);
+  align-items: center;
+  justify-items: stretch;
+  grid-template-areas:
+    "tpIcon"
+    "evnDat"
+    "jpName"
+    "deName"
+    "deScrp"
+    "gglMps"
+    "wbSite";
+}
+
+.tpIcon {
+  grid-area: tpIcon;
+}
+.evnDat {
+  grid-area: evnDat;
+}
+.jpName {
+  grid-area: jpName;
+}
+.gglMps {
+  grid-area: gglMps;
+}
+.deName {
+  grid-area: deName;
+}
+.deScrp {
+  grid-area: deScrp;
+}
+.wbSite {
+  grid-area: wbSite;
+}
+#mainHeader > h1 {
+  grid-area: headline;
+}
+#navToggleContainer {
+  grid-area: navToggle;
+}
+#mainHeader > navigation {
+  grid-area: filters;
+}
+
+@media (max-width: 840px) {
+  #mainHeader {
+    grid-template-areas: "headline navToggle";
+  }
+  navigation {
+    margin-left: 0;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  #mainHeader:has(#navTogggle:checked) {
+    grid-template-areas:
+      "headline navToggle"
+      "filters filters";
+  }
+}
+
+@media (max-width: 375px) {
+  #navToggleContainer {
+    margin-left: 0;
+    justify-self: center;
+    width: max-content;
+  }
+  #mainHeader {
+    grid-template-areas:
+      "headline"
+      "navToggle";
+  }
+  #mainHeader:has(#navTogggle:checked) {
+    grid-template-areas:
+      "headline"
+      "navToggle"
+      "filters";
+  }
+}
+
+@media (min-width: 450px) {
+  .card {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "tpIcon evnDat"
+      "jpName jpName"
+      "deName deName"
+      "deScrp deScrp"
+      "gglMps wbSite";
+  }
+}
+
+@media (min-width: 840px) {
+  .card {
+    grid-template-areas:
+      "tpIcon evnDat"
+      "jpName deName"
+      "deScrp deScrp"
+      "gglMps wbSite";
+  }
+}

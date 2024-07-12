@@ -1,3 +1,20 @@
+:root {
+  --padding: 1rem;
+  --gap: 2rem;
+  --card-gap: 0.5rem;
+  --border-radius: var(--padding);
+  --base-color: #494947;
+  --base-color-rgb: 73, 73, 71;
+  --color-food: #33ff66;
+  --color-food-rgb: 51, 255, 102;
+  --color-concert: #d138bf;
+  --color-concert-rgb: 209, 56, 191;
+  --color-misc: #44ccff;
+  --color-misc-rgb: 68, 204, 255;
+  --color-dummy: #7494ea;
+  --color-dummy-rgb: 116, 148, 234;
+}
+
 html {
   font-family: "Wix Madefor Display", sans-serif;
   font-optical-sizing: auto;
@@ -5,26 +22,181 @@ html {
   font-style: normal;
   padding: 0;
   margin: 0;
-  background-color: midnightblue;
+  background-color: var(--base-color);
 }
 
 body {
-  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+#main {
+  gap: var(--gap);
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  box-sizing: border-box;
+  width: 100svw;
+  height: 100svh;
+  overflow: scroll;
+  padding: 2rem;
+  background-image: url("/images/tokyo_tower.webp");
+  background-position: center top;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-h1 {
-  display: inline-block;
-  color: red;
-  background-color: white;
-  border-radius: 3rem;
+#mainHeader {
+  position: sticky;
+  top: 1rem;
+  z-index: 1;
+  display: grid;
+  gap: var(--gap);
+  color: white;
+  background-color: rgba(var(--base-color-rgb), 0.5);
+  border-radius: var(--border-radius);
+  border: 1px solid currentColor;
   padding: 1rem 2rem;
+  margin: 0;
+  backdrop-filter: blur(1rem);
+  h1 {
+    margin: 0;
+  }
+}
+
+.card {
+  p {
+    padding: 0;
+    margin: 0;
+    color: white;
+  }
+  backdrop-filter: blur(1rem);
+  padding: var(--padding);
+  border-radius: var(--border-radius);
+  h1 {
+    margin: 0;
+    color: white;
+  }
+  h2 {
+    margin: 0;
+    color: white;
+  }
+  a {
+    display: flex;
+    gap: 1rem;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    color: white;
+    background-color: rgba(var(--base-color-rgb), 0.5);
+    border-radius: var(--border-radius);
+    align-content: center;
+  }
+  p.deScrp {
+    white-space: pre-wrap;
+  }
+}
+
+label.tpIcon {
+  display: inline-block;
+  color: white;
+  border-radius: var(--border-radius);
+  padding: 0.5rem 1rem;
+  white-space: nowrap;
+}
+
+.navRadio {
+  display: none;
+}
+
+label {
+  position: relative;
+  &.tpIcon {
+    border: 1px solid white;
+    .arrow {
+      display: inline-block;
+      margin-left: 1rem;
+      position: relative;
+      top: -2px;
+    }
+  }
+}
+
+.all {
+  background-color: rgba(var(--base-color-rgb), 0.3);
+}
+.navRadio.all:checked + .all {
+  background-color: rgba(var(--base-color-rgb), 0.6);
+}
+
+.food {
+  background-color: rgba(var(--color-food-rgb), 0.3);
+}
+.navRadio.food:checked + .food {
+  background-color: rgba(var(--color-food-rgb), 0.6);
+}
+
+.concert {
+  background-color: rgba(var(--color-concert-rgb), 0.3);
+}
+.navRadio.concert:checked + .concert {
+  background-color: rgba(var(--color-concert-rgb), 0.6);
+}
+
+.misc {
+  background-color: rgba(var(--color-misc-rgb), 0.3);
+}
+.navRadio.misc:checked + .misc {
+  background-color: rgba(var(--color-misc-rgb), 0.6);
 }
 
 .japanese {
   font-family: "Hina Mincho", serif;
   font-weight: 400;
   font-style: normal;
+}
+
+navigation {
+  display: none;
+  gap: 1rem;
+  margin-left: auto;
+}
+
+#navToggleContainer {
+  margin-left: auto;
+}
+
+#navTogggle,
+#hideNavToggle {
+  display: none;
+}
+
+#showNavToggle {
+  display: inline-block;
+}
+
+#navTogggle:checked {
+  & ~ #hideNavToggle {
+    display: inline-block;
+  }
+  & ~ #showNavToggle {
+    display: none;
+  }
+}
+
+#mainHeader:has(#navTogggle:checked) {
+  navigation {
+    display: flex;
+  }
+}
+
+@media (min-width: 840px) {
+  #navToggleContainer {
+    display: none;
+  }
+  #mainHeader {
+    display: flex;
+    navigation {
+      display: flex;
+    }
+  }
 }
