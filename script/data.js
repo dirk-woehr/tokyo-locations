@@ -12,10 +12,10 @@ Nearest exit is "Yaesu South Exit" of JR Tokyo station.`,
   },
   {
     type: "concert",
-    name: "Other Name",
+    name: "Gacharic Spin x Doll$boxx",
     link: "#",
     googleMaps: "#",
-    date: "2024-12-01T17:00:00",
+    date: "2024-12-08T17:00:00",
   },
   {
     type: "food",
@@ -57,8 +57,8 @@ Nearest exit is "Yaesu South Exit" of JR Tokyo station.`,
     name: "Baikatei",
     japaneseName: "梅花亭",
     link: "https://www.baikatei.asia",
-    googleMaps:
-      "https://www.google.com/maps/place/2-ch%C5%8Dme-1-4+Shinkawa,+Chuo+City,+Tokyo+104-0033,+Japan/@35.6773109,139.7776824,17z/data=!3m1!4b1!4m6!3m5!1s0x6018895c7b579967:0x9923b6b9983acc3c!8m2!3d35.6773066!4d139.7802627!16s%2Fg%2F12hl1jzd1?entry=ttu",
+    googleMaps: "https://maps.app.goo.gl/x8ewfGqpE244jJN88",
+    description: `Our shop is a confectionery store that was established in Odenmacho in 1850. In 1853, we created the first Japanese confectionery, "Amerika Manju," which was baked in a kettle, and it became a big hit. Since then, successive owners have been working on their ingenuity and have continued to make confectionery that is refined yet commonplace.`,
   },
 ];
 
