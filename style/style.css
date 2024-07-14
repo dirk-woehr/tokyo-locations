@@ -3,16 +3,16 @@
   --gap: 2rem;
   --card-gap: 0.5rem;
   --border-radius: var(--padding);
-  --base-color: #494947;
-  --base-color-rgb: 73, 73, 71;
-  --color-food: #33ff66;
-  --color-food-rgb: 51, 255, 102;
-  --color-concert: #d138bf;
-  --color-concert-rgb: 209, 56, 191;
-  --color-misc: #44ccff;
-  --color-misc-rgb: 68, 204, 255;
-  --color-dummy: #7494ea;
-  --color-dummy-rgb: 116, 148, 234;
+  --base-color: rgb(37, 35, 37);
+  --base-color-rgb: 37, 35, 37;
+  --color-food: rgb(20, 155, 54);
+  --color-food-rgb: 20, 155, 54;
+  --color-concert: rgb(153, 43, 140);
+  --color-concert-rgb: 153, 43, 140;
+  --color-misc: rgb(3, 97, 221);
+  --color-misc-rgb: 3, 97, 221;
+  --color-dummy: rgb(39, 141, 148);
+  --color-dummy-rgb: 9, 141, 148;
 }
 
 html {
