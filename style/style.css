@@ -11,6 +11,8 @@
   --color-concert-rgb: 153, 43, 140;
   --color-misc: rgb(3, 97, 221);
   --color-misc-rgb: 3, 97, 221;
+  --color-shopping: rgb(107, 12, 12);
+  --color-shopping-rgb: 107, 12, 12;
   --color-dummy: rgb(39, 141, 148);
   --color-dummy-rgb: 9, 141, 148;
 }
@@ -58,16 +60,16 @@ body {
   border: 1px solid currentColor;
   padding: 1rem 2rem;
   margin: 0;
-  -webkit-backdrop-filter: blur(1rem);
-  backdrop-filter: blur(1rem);
+  -webkit-backdrop-filter: blur(2rem);
+  backdrop-filter: blur(2rem);
   h1 {
     margin: 0;
   }
 }
 
 .card {
-  -webkit-backdrop-filter: blur(1rem);
-  backdrop-filter: blur(1rem);
+  -webkit-backdrop-filter: blur(2rem);
+  backdrop-filter: blur(2rem);
   padding: var(--padding);
   border-radius: var(--border-radius);
   p {
@@ -149,6 +151,13 @@ label {
 }
 .navRadio.misc:checked + .misc {
   background-color: rgba(var(--color-misc-rgb), 0.6);
+}
+
+.shopping {
+  background-color: rgba(var(--color-shopping-rgb), 0.3);
+}
+.navRadio.shopping:checked + .misc {
+  background-color: rgba(var(--color-shopping-rgb), 0.6);
 }
 
 .japanese {

@@ -1,4 +1,4 @@
-const types = ["all", "food", "concert", "misc"];
+const types = ["all", "food", "concert", "misc", "shopping"];
 const data = [
   {
     type: "food",
@@ -91,6 +91,14 @@ Closed: Thursday`,
     description: "Mon-Sun 11:30 22:00",
   },
   {
+    type: "food",
+    name: "Toyosu Senkyaku Banrai",
+    japaneseName: "豊洲 千客万来",
+    link: "https://www.toyosu-senkyakubanrai.jp",
+    googleMaps: "https://maps.app.goo.gl/MMUSSCMYD5PiK8We7",
+    description: "Mon-Sun 10:00 22:00",
+  },
+  {
     type: "concert",
     name: "Other Name",
     link: "#",
@@ -104,6 +112,49 @@ Closed: Thursday`,
     link: "https://www.baikatei.asia",
     googleMaps: "https://maps.app.goo.gl/x8ewfGqpE244jJN88",
     description: `Our shop is a confectionery store that was established in Odenmacho in 1850. In 1853, we created the first Japanese confectionery, "Amerika Manju," which was baked in a kettle, and it became a big hit. Since then, successive owners have been working on their ingenuity and have continued to make confectionery that is refined yet commonplace.`,
+  },
+  {
+    type: "misc",
+    name: "Nishi-Nippori Station",
+    japaneseName: "西日暮里駅",
+    googleMaps: "https://maps.app.goo.gl/jNmDmvtBfBcafjYt7",
+    description: `Ruhigere Gegend mit verschiedenen Schreinen`,
+  },
+  {
+    type: "misc",
+    name: "Togoshi Ginza Shopping Street",
+    japaneseName: "戸越銀座商店街",
+    link: "http://www.togoshiginza.jp/",
+    googleMaps: "https://maps.app.goo.gl/WwsBhv1ovJgsHneG6",
+    description: `Einkaufstraße mit Fressbuden`,
+  },
+  {
+    type: "shopping",
+    name: "Daruyama Records & Craft Beer",
+    japaneseName: "だるまや レコード & クラフトビール",
+    link: "https://darumaya.to/",
+    googleMaps: "https://maps.app.goo.gl/qp9zJNY4eZMiBW9x9",
+    description: `Platten & Bier`,
+  },
+  {
+    type: "shopping",
+    name: "Face Records",
+    link: "https://www.facerecords.com/shop/index.php",
+    googleMaps: "https://maps.app.goo.gl/AruPvvs7mTL3tTrN9",
+    description: `Rare CDs & Platten`,
+  },
+  {
+    type: "shopping",
+    name: "Woo-Eee-Woo Store",
+    googleMaps: "https://maps.app.goo.gl/2FrpR83SQr13rYWo7",
+    description: `CDs & Platten`,
+  },
+  {
+    type: "shopping",
+    name: "HMV Records",
+    link: "https://www.hmv.co.jp/store/SHU/",
+    googleMaps: "https://maps.app.goo.gl/B8QksAn5PAEPgpJMA",
+    description: `CDs & Platten`,
   },
   {
     type: "misc",
@@ -131,6 +182,8 @@ const getTypeTag = (type) => {
       return "&#127928; Konzert";
     case "misc":
       return "&#128508; Sonstiges";
+    case "shopping":
+      return "&#128722; Einkaufen";
   }
   return type;
 };
