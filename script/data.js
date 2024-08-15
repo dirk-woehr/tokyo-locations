@@ -68,6 +68,16 @@ Closed: Thursday`,
     googleMaps: "https://maps.app.goo.gl/VjGy54YMSoneKB1Y6",
     description: "Mon-Fri 10:00 - 19:00\nSat-Sun 09:00 - 19:00",
   },
+
+  {
+    type: "misc",
+    name: "Tokyo Video Gamers (Modernes Izakaya-Restaurant)",
+    japaneseName: "Tokyo Video Gamers",
+    link: "https://tokyovideogamers.com/",
+    googleMaps: "https://maps.app.goo.gl/x63jrf8w2Zr41Wfi8",
+    description: "Izakaya Eat Drink Gratis play an Arcade Automaten",
+  },
+  
   {
     type: "food",
     name: "Sometarō",
