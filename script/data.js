@@ -77,7 +77,7 @@ Closed: Thursday`,
     googleMaps: "https://maps.app.goo.gl/x63jrf8w2Zr41Wfi8",
     description: "Izakaya Eat Drink Gratis play an Arcade Automaten",
   },
-  
+
   {
     type: "food",
     name: "Sometarō",
@@ -122,6 +122,21 @@ Closed: Thursday`,
     link: "#",
     googleMaps: "#",
     date: "2024-12-01T17:00:00",
+  },
+  {
+    type: "concert",
+    name: "Tsushimamire",
+    japaneseName: "つしまみれ",
+    link: "https://toos.co.jp/basementbar/ev/%e3%81%a4%e3%82%88%e3%81%97%e7%94%9f%e8%aa%95%e7%a5%ad-2024/",
+    googleMaps: "https://maps.app.goo.gl/aPFJRrsv14gf6Z4Z9",
+    date: "2024-12-09T18:30:00",
+  },
+  {
+    type: "concert",
+    name: "Another Story /C-GATE",
+    link: "http://www.cyclone1997.com/home.html",
+    googleMaps: "https://maps.app.goo.gl/PoUvPgpFdoYG6pHP9",
+    date: "2024-12-10T18:00:00",
   },
   {
     type: "misc",
@@ -194,13 +209,7 @@ Closed: Thursday`,
     japaneseName: "リシュー",
     link: "https://www.reissue.co.jp/",
     googleMaps: "https://maps.app.goo.gl/SXLDDQqa2M6n2tvd8",
-    description: `Bitte kommen Sie mit Ihren Lieben.
-
-Bitte kommen Sie und denken Sie an etwas, das Sie lieben.
-
-Auch wenn Sie die Form Ihres Milchkaffees nicht behalten können, werden wir eine einzigartige Latte Art kreieren, die in Ihrer Erinnerung und Ihrem Herzen bleiben wird.
-
-Tue-Sun 10:00 - 19:00`,
+    description: "3d Latte Art",
   },
 ];
 
